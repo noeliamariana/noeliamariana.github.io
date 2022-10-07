@@ -421,3 +421,55 @@
     transform: rotateZ(10deg);
   }
 
+/* Deixando a página responsiva */
+@media screen and (max-width: 1024px){
+  section {
+    justify-content: center;
+}
+
+.container {
+  max-width: 930px;
+}
+  #section-stranger-things-gallery .container {
+   width: 90%;
+}
+#section-stranger-things-trailer .video-frame iframe{
+  width: 400px;
+}
+
+  footer p{
+    max-width: 520px;
+  }
+  
+}
+
+@media screen and (max-width: 768px){
+  header, main, footer{
+  min-width: 843px;
+  }
+  
+  .container {
+    max-width: 800px;
+  }
+  #section-form .form-container::after {
+    display: none;
+  }
+  #section-stranger-things-trailer .video-frame {
+    scale: 0.85;
+}
+  #section-form .form-container form {
+    scale: 0.85;
+}
+  footer p{
+    max-width: 370px;
+  }
+ 
+}
+
+/* @media (min-width: 480px){
+  
+} */
+/* @media (min-width: 320px){
+  
+} */
+
